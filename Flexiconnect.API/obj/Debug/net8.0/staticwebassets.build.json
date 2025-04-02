@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "s6q35b5AQRawu5iU8UXxKV+nIa8gjfq0rXl6dEj97Bk=",
+  "Source": "Flexiconnect.API",
+  "BasePath": "_content/Flexiconnect.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

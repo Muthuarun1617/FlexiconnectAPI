@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8813E08F-808B-4B04-8BBC-70B7C31CF342}|Flexiconnect.API\\Flexiconnect.API.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.api\\flexiconnect.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8813E08F-808B-4B04-8BBC-70B7C31CF342}|Flexiconnect.API\\Flexiconnect.API.csproj|solutionrelative:flexiconnect.api\\flexiconnect.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Flexiconnect.API",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.API\\Flexiconnect.API.csproj",
+              "RelativeDocumentMoniker": "Flexiconnect.API\\Flexiconnect.API.csproj",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.API\\Flexiconnect.API.csproj",
+              "RelativeToolTip": "Flexiconnect.API\\Flexiconnect.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-02T05:03:53.798Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
