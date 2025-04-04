@@ -3,8 +3,68 @@
   "WorkspaceRootPath": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8813E08F-808B-4B04-8BBC-70B7C31CF342}|Flexiconnect.API\\Flexiconnect.API.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.api\\flexiconnect.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8813E08F-808B-4B04-8BBC-70B7C31CF342}|Flexiconnect.API\\Flexiconnect.API.csproj|solutionrelative:flexiconnect.api\\flexiconnect.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{2F4CE63C-7CD0-4E4A-A2BB-158BD2967709}|Flexiconnect.Domain\\Flexiconnect.Domain.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.domain\\entities\\actionmenumaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F4CE63C-7CD0-4E4A-A2BB-158BD2967709}|Flexiconnect.Domain\\Flexiconnect.Domain.csproj|solutionrelative:flexiconnect.domain\\entities\\actionmenumaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691E2CF-CA81-4571-9F60-ADE6AD526DFC}|Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.infrastructure\\persistence\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691E2CF-CA81-4571-9F60-ADE6AD526DFC}|Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj|solutionrelative:flexiconnect.infrastructure\\persistence\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B76D481A-48EE-403F-8DE2-C92A7BC503F9}|Flexiconnect.Application\\Flexiconnect.Application.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.application\\services\\implementations\\actionmenumasterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B76D481A-48EE-403F-8DE2-C92A7BC503F9}|Flexiconnect.Application\\Flexiconnect.Application.csproj|solutionrelative:flexiconnect.application\\services\\implementations\\actionmenumasterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8813E08F-808B-4B04-8BBC-70B7C31CF342}|Flexiconnect.API\\Flexiconnect.API.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8813E08F-808B-4B04-8BBC-70B7C31CF342}|Flexiconnect.API\\Flexiconnect.API.csproj|solutionrelative:flexiconnect.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F4CE63C-7CD0-4E4A-A2BB-158BD2967709}|Flexiconnect.Domain\\Flexiconnect.Domain.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.domain\\implementation\\actionmenumasterdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F4CE63C-7CD0-4E4A-A2BB-158BD2967709}|Flexiconnect.Domain\\Flexiconnect.Domain.csproj|solutionrelative:flexiconnect.domain\\implementation\\actionmenumasterdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8813E08F-808B-4B04-8BBC-70B7C31CF342}|Flexiconnect.API\\Flexiconnect.API.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.api\\controllers\\actionmenumastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8813E08F-808B-4B04-8BBC-70B7C31CF342}|Flexiconnect.API\\Flexiconnect.API.csproj|solutionrelative:flexiconnect.api\\controllers\\actionmenumastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691E2CF-CA81-4571-9F60-ADE6AD526DFC}|Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.infrastructure\\persistence\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691E2CF-CA81-4571-9F60-ADE6AD526DFC}|Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj|solutionrelative:flexiconnect.infrastructure\\persistence\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691E2CF-CA81-4571-9F60-ADE6AD526DFC}|Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691E2CF-CA81-4571-9F60-ADE6AD526DFC}|Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj|solutionrelative:flexiconnect.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8813E08F-808B-4B04-8BBC-70B7C31CF342}|Flexiconnect.API\\Flexiconnect.API.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8813E08F-808B-4B04-8BBC-70B7C31CF342}|Flexiconnect.API\\Flexiconnect.API.csproj|solutionrelative:flexiconnect.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F4CE63C-7CD0-4E4A-A2BB-158BD2967709}|Flexiconnect.Domain\\Flexiconnect.Domain.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.domain\\interfaces\\iactionmenumasterdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F4CE63C-7CD0-4E4A-A2BB-158BD2967709}|Flexiconnect.Domain\\Flexiconnect.Domain.csproj|solutionrelative:flexiconnect.domain\\interfaces\\iactionmenumasterdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B76D481A-48EE-403F-8DE2-C92A7BC503F9}|Flexiconnect.Application\\Flexiconnect.Application.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.application\\services\\interfaces\\iactionmenumasterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B76D481A-48EE-403F-8DE2-C92A7BC503F9}|Flexiconnect.Application\\Flexiconnect.Application.csproj|solutionrelative:flexiconnect.application\\services\\interfaces\\iactionmenumasterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B76D481A-48EE-403F-8DE2-C92A7BC503F9}|Flexiconnect.Application\\Flexiconnect.Application.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B76D481A-48EE-403F-8DE2-C92A7BC503F9}|Flexiconnect.Application\\Flexiconnect.Application.csproj|solutionrelative:flexiconnect.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B76D481A-48EE-403F-8DE2-C92A7BC503F9}|Flexiconnect.Application\\Flexiconnect.Application.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.application\\flexiconnect.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B76D481A-48EE-403F-8DE2-C92A7BC503F9}|Flexiconnect.Application\\Flexiconnect.Application.csproj|solutionrelative:flexiconnect.application\\flexiconnect.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B76D481A-48EE-403F-8DE2-C92A7BC503F9}|Flexiconnect.Application\\Flexiconnect.Application.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.application\\dtos\\actionmenudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B76D481A-48EE-403F-8DE2-C92A7BC503F9}|Flexiconnect.Application\\Flexiconnect.Application.csproj|solutionrelative:flexiconnect.application\\dtos\\actionmenudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691E2CF-CA81-4571-9F60-ADE6AD526DFC}|Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.infrastructure\\persistence\\configurations\\actionmenuconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691E2CF-CA81-4571-9F60-ADE6AD526DFC}|Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj|solutionrelative:flexiconnect.infrastructure\\persistence\\configurations\\actionmenuconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691E2CF-CA81-4571-9F60-ADE6AD526DFC}|Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj|d:\\thiru\\duroflex\\development\\git\\flexiconnectapi\\flexiconnect.infrastructure\\persistence\\repositories\\actionmenurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691E2CF-CA81-4571-9F60-ADE6AD526DFC}|Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj|solutionrelative:flexiconnect.infrastructure\\persistence\\repositories\\actionmenurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +74,214 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.API\\Program.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.API\\Program.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.API\\Program.cs",
+              "RelativeToolTip": "Flexiconnect.API\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:31:45.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ActionMenuMasterService.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Application\\Services\\Implementations\\ActionMenuMasterService.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Application\\Services\\Implementations\\ActionMenuMasterService.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Application\\Services\\Implementations\\ActionMenuMasterService.cs",
+              "RelativeToolTip": "Flexiconnect.Application\\Services\\Implementations\\ActionMenuMasterService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAIAxwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T10:38:49.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Persistence\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Infrastructure\\Persistence\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Persistence\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "Flexiconnect.Infrastructure\\Persistence\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T15:37:56.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Persistence\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Infrastructure\\Persistence\\IGenericRepository.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Persistence\\IGenericRepository.cs",
+              "RelativeToolTip": "Flexiconnect.Infrastructure\\Persistence\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T12:17:12.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ActionMenuMasterController.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.API\\Controllers\\ActionMenuMasterController.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.API\\Controllers\\ActionMenuMasterController.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.API\\Controllers\\ActionMenuMasterController.cs",
+              "RelativeToolTip": "Flexiconnect.API\\Controllers\\ActionMenuMasterController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T15:30:18.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Flexiconnect.API",
-              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.API\\Flexiconnect.API.csproj",
-              "RelativeDocumentMoniker": "Flexiconnect.API\\Flexiconnect.API.csproj",
-              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.API\\Flexiconnect.API.csproj",
-              "RelativeToolTip": "Flexiconnect.API\\Flexiconnect.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ActionMenuMaster.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Domain\\Entities\\ActionMenuMaster.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Domain\\Entities\\ActionMenuMaster.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Domain\\Entities\\ActionMenuMaster.cs",
+              "RelativeToolTip": "Flexiconnect.Domain\\Entities\\ActionMenuMaster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T10:46:04.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActionMenuMasterDomain.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Domain\\Implementation\\ActionMenuMasterDomain.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Domain\\Implementation\\ActionMenuMasterDomain.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Domain\\Implementation\\ActionMenuMasterDomain.cs",
+              "RelativeToolTip": "Flexiconnect.Domain\\Implementation\\ActionMenuMasterDomain.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAawBIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T15:13:14.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Flexiconnect.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T10:25:22.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IActionMenuMasterDomain.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Domain\\Interfaces\\IActionMenuMasterDomain.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Domain\\Interfaces\\IActionMenuMasterDomain.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Domain\\Interfaces\\IActionMenuMasterDomain.cs",
+              "RelativeToolTip": "Flexiconnect.Domain\\Interfaces\\IActionMenuMasterDomain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T15:10:56.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Flexiconnect.API\\appsettings.json",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.API\\appsettings.json",
+              "RelativeToolTip": "Flexiconnect.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-04T15:16:47.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IActionMenuMasterService.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Application\\Services\\Interfaces\\IActionMenuMasterService.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Application\\Services\\Interfaces\\IActionMenuMasterService.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Application\\Services\\Interfaces\\IActionMenuMasterService.cs",
+              "RelativeToolTip": "Flexiconnect.Application\\Services\\Interfaces\\IActionMenuMasterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T10:38:26.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Application\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Application\\Mappings\\MappingProfile.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Application\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "Flexiconnect.Application\\Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T10:52:38.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Flexiconnect.Application",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Application\\Flexiconnect.Application.csproj",
+              "RelativeDocumentMoniker": "Flexiconnect.Application\\Flexiconnect.Application.csproj",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Application\\Flexiconnect.Application.csproj",
+              "RelativeToolTip": "Flexiconnect.Application\\Flexiconnect.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-02T05:03:53.798Z",
+              "WhenOpened": "2025-04-03T10:37:52.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ActionMenuDto.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Application\\DTOs\\ActionMenuDto.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Application\\DTOs\\ActionMenuDto.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Application\\DTOs\\ActionMenuDto.cs",
+              "RelativeToolTip": "Flexiconnect.Application\\DTOs\\ActionMenuDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T10:48:04.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ActionMenuConfiguration.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Persistence\\Configurations\\ActionMenuConfiguration.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Infrastructure\\Persistence\\Configurations\\ActionMenuConfiguration.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Persistence\\Configurations\\ActionMenuConfiguration.cs",
+              "RelativeToolTip": "Flexiconnect.Infrastructure\\Persistence\\Configurations\\ActionMenuConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T10:36:40.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ActionMenuRepository.cs",
+              "DocumentMoniker": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Persistence\\Repositories\\ActionMenuRepository.cs",
+              "RelativeDocumentMoniker": "Flexiconnect.Infrastructure\\Persistence\\Repositories\\ActionMenuRepository.cs",
+              "ToolTip": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Persistence\\Repositories\\ActionMenuRepository.cs",
+              "RelativeToolTip": "Flexiconnect.Infrastructure\\Persistence\\Repositories\\ActionMenuRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T10:37:07.822Z",
               "EditorCaption": ""
             }
           ]
