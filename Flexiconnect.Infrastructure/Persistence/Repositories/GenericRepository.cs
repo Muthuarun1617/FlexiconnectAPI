@@ -1,14 +1,5 @@
-﻿using Flexiconnect.Infrastructure.Persistence.Interfaces;
-using System;
-using System.Collections.Generic;
-using Microsoft.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dapper;
-using System.Net;
-using Microsoft.IdentityModel.Protocols;
-using System.Data;
+﻿using Dapper;
+using Flexiconnect.Infrastructure.Persistence.Repositories.Interfaces;
 
 namespace Flexiconnect.Infrastructure.Persistence.Repositories
 {
@@ -23,9 +14,8 @@ namespace Flexiconnect.Infrastructure.Persistence.Repositories
         {
             using (var conn = _context.CreateConnection())
             {
-                return await conn.QueryAsync<T>("dbo.sp_fetch_actionmenu", null, commandType: System.Data.CommandType.StoredProcedure);
+                return await conn.QueryAsync<T>(objectname, null, commandType: System.Data.CommandType.StoredProcedure);
             }
-            
         }
     }
 }

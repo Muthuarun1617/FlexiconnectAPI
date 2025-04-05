@@ -126,3 +126,5 @@ D:\Thiru\Duroflex\Development\Git\FlexiconnectAPI\Flexiconnect.API\bin\Debug\net
 D:\Thiru\Duroflex\Development\Git\FlexiconnectAPI\Flexiconnect.API\bin\Debug\net8.0\AutoMapper.dll
 D:\Thiru\Duroflex\Development\Git\FlexiconnectAPI\Flexiconnect.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Thiru\Duroflex\Development\Git\FlexiconnectAPI\Flexiconnect.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\Thiru\Duroflex\Development\Git\FlexiconnectAPI\Flexiconnect.API\bin\Debug\net8.0\Flexiconnect.Shared.dll
+D:\Thiru\Duroflex\Development\Git\FlexiconnectAPI\Flexiconnect.API\bin\Debug\net8.0\Flexiconnect.Shared.pdb

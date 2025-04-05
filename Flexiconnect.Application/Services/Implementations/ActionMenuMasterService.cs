@@ -1,16 +1,8 @@
-﻿using Flexiconnect.Application.Services.Interfaces;
+﻿using AutoMapper;
 using Flexiconnect.Application.DTOs;
-using Flexiconnect.Domain.Implementation;
-using Flexiconnect.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+using Flexiconnect.Application.Services.Interfaces;
 using Flexiconnect.Domain.Entities;
-using System.Data;
-using Flexiconnect.Infrastructure.Persistence.Interfaces;
+using Flexiconnect.Domain.Interfaces;
 
 namespace Flexiconnect.Application.Services.Implementations
 {

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Flexiconnect.Application\Flexiconnect.Application.csproj" />
+    <ProjectReference Include="..\Flexiconnect.Shared\Flexiconnect.Shared.csproj" />
   </ItemGroup>
 
 </Project>

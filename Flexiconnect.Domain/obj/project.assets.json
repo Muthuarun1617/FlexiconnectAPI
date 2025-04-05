@@ -680,6 +680,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Dapper": "2.1.66",
+          "Flexiconnect.Shared": "1.0.0",
           "Microsoft.Data.SqlClient": "6.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.3"
         },
@@ -688,6 +689,16 @@
         },
         "runtime": {
           "bin/placeholder/Flexiconnect.Infrastructure.dll": {}
+        }
+      },
+      "Flexiconnect.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Flexiconnect.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Flexiconnect.Shared.dll": {}
         }
       }
     }
@@ -1755,11 +1766,17 @@
       "type": "project",
       "path": "../Flexiconnect.Infrastructure/Flexiconnect.Infrastructure.csproj",
       "msbuildProject": "../Flexiconnect.Infrastructure/Flexiconnect.Infrastructure.csproj"
+    },
+    "Flexiconnect.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Flexiconnect.Shared/Flexiconnect.Shared.csproj",
+      "msbuildProject": "../Flexiconnect.Shared/Flexiconnect.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Flexiconnect.Infrastructure >= 1.0.0"
+      "Flexiconnect.Infrastructure >= 1.0.0",
+      "Flexiconnect.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1796,6 +1813,9 @@
           "projectReferences": {
             "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj": {
               "projectPath": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Infrastructure\\Flexiconnect.Infrastructure.csproj"
+            },
+            "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Shared\\Flexiconnect.Shared.csproj": {
+              "projectPath": "D:\\Thiru\\Duroflex\\Development\\Git\\FlexiconnectAPI\\Flexiconnect.Shared\\Flexiconnect.Shared.csproj"
             }
           }
         }

@@ -5,8 +5,8 @@ using Flexiconnect.Domain.Entities;
 using Flexiconnect.Domain.Implementation;
 using Flexiconnect.Domain.Interfaces;
 using Flexiconnect.Infrastructure.Persistence;
-using Flexiconnect.Infrastructure.Persistence.Interfaces;
 using Flexiconnect.Infrastructure.Persistence.Repositories;
+using Flexiconnect.Infrastructure.Persistence.Repositories.Interfaces;
 using Microsoft.Data.SqlClient;
 using System.Data;
 

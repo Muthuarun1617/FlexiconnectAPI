@@ -1,13 +1,7 @@
 ﻿using Flexiconnect.Domain.Entities;
 using Flexiconnect.Domain.Interfaces;
-using Flexiconnect.Infrastructure.Persistence.Interfaces;
-using Flexiconnect.Infrastructure.Persistence.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Flexiconnect.Infrastructure.Persistence.Repositories.Interfaces;
+using Flexiconnect.Shared.Constants;
 
 namespace Flexiconnect.Domain.Implementation
 {
@@ -22,8 +16,7 @@ namespace Flexiconnect.Domain.Implementation
         public async Task<IEnumerable<ActionMenuMaster>> GetActionMenu()
         {
             IEnumerable<ActionMenuMaster>  result = new List<ActionMenuMaster>();
-
-            result = await _genericRepository.GetAsync("ActionMenuMaster");
+            result = await _genericRepository.GetAsync(DBConstants.FetchActionMenuSP);
             return result;
         }
     }

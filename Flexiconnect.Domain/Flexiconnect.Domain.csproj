@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Flexiconnect.Infrastructure\Flexiconnect.Infrastructure.csproj" />
+    <ProjectReference Include="..\Flexiconnect.Shared\Flexiconnect.Shared.csproj" />
   </ItemGroup>
 
 </Project>

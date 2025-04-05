@@ -1,9 +1,7 @@
-﻿using AutoMapper;
-using Flexiconnect.Application.Services.Implementations;
+﻿using Flexiconnect.Application.DTOs;
 using Flexiconnect.Application.Services.Interfaces;
-using Microsoft.AspNetCore.Http;
+using Flexiconnect.Shared.Constants;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace Flexiconnect.API.Controllers
 {
@@ -20,8 +18,16 @@ namespace Flexiconnect.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetActionMenuData()
         {
-            var response = await _actionMenuMasterService.GetActionMenuMaster();
-            return Ok(response);
+            IEnumerable<ActionMenuDto> response = new List<ActionMenuDto>();
+            try
+            {
+                response = await _actionMenuMasterService.GetActionMenuMaster();
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = MessageConstants.ErrorResponse });
+            }
         }
     }
 }
