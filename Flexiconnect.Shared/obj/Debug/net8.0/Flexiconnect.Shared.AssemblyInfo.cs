@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Flexiconnect.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27be8fefc15b475ec2eb9d3e7e00da4026a73346")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d2c6a3464dcf6a1df223a12c6a29f6aa65baa6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Flexiconnect.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Flexiconnect.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

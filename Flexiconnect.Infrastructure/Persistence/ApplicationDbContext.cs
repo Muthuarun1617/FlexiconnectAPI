@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Flexiconnect.Shared.Constants;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
+using System.Data;
 
 namespace Flexiconnect.Infrastructure.Persistence
 {
-    internal class ApplicationDbContext
+    public class ApplicationDbContext
     {
+        private readonly string? _connectionString;
+        public ApplicationDbContext(IConfiguration configuration) 
+        {
+            _connectionString = configuration.GetConnectionString(DBConstants.DBConnString);
+        }
+
+        public IDbConnection CreateConnection()
+        {
+            return new SqlConnection(_connectionString);
+        }
     }
 }
