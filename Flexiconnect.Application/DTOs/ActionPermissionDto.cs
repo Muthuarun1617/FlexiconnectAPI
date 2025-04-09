@@ -6,27 +6,26 @@ using System.Threading.Tasks;
 
 namespace Flexiconnect.Application.DTOs
 {
-    public class ActionMenuDto
+    public class ActionPermissionDto
     {
-        public int ActionMenuID { get; set; }
-        public string? ActionMenuName { get; set; }
+        public int PermissionID { get; set; }
+        public string? PermissionName { get; set; }
         public int IsActive { get; set; }
         public int CreatedBy { get; set; }
         public int ModifiedBy { get; set; }
-
     }
 
-    public class ActionMenuAddDto
+    public class ActionPermissionAddDto
     {
-        public string? ActionMenuName { get; set; }
+        public string? PermissionName { get; set; }
         public int IsActive { get; set; }
         public int CreatedBy { get; set; }
 
     }
 
-    public class ActionMenuDeleteDto
+    public class ActionPermissionDeleteDto
     {
-        public int ActionMenuID { get; set; }
+        public int PermissionID { get; set; }
         public int ModifiedBy { get; set; }
     }
 }
