@@ -23,6 +23,15 @@ namespace Flexiconnect.Application.DTOs
 
     }
 
+    public class ActionPermissionUpdateDto
+    {
+        public int PermissionID { get; set; }
+        public string? PermissionName { get; set; }
+        public int IsActive { get; set; }
+        public int ModifiedBy { get; set; }
+
+    }
+
     public class ActionPermissionDeleteDto
     {
         public int PermissionID { get; set; }

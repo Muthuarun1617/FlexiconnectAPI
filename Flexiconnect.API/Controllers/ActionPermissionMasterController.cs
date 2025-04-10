@@ -46,11 +46,11 @@ namespace Flexiconnect.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateActionPermissionData(ActionPermissionDto actionPermissionDto)
+        public async Task<IActionResult> UpdateActionPermissionData(ActionPermissionUpdateDto actionPermissionUpdateDto)
         {
             try
             {
-                await _actionPermissionMasterService.UpdateActionPermissionMaster(actionPermissionDto);
+                await _actionPermissionMasterService.UpdateActionPermissionMaster(actionPermissionUpdateDto);
                 return Ok(new { message = MessageConstants.SuccessUpdateResponse });
             }
             catch (Exception ex)

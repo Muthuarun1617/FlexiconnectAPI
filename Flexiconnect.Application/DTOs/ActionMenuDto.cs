@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Flexiconnect.Application.DTOs
+﻿namespace Flexiconnect.Application.DTOs
 {
     public class ActionMenuDto
     {
@@ -21,6 +15,15 @@ namespace Flexiconnect.Application.DTOs
         public string? ActionMenuName { get; set; }
         public int IsActive { get; set; }
         public int CreatedBy { get; set; }
+
+    }
+
+    public class ActionMenuUpdateDto
+    {
+        public int ActionMenuID { get; set; }
+        public string? ActionMenuName { get; set; }
+        public int IsActive { get; set; }
+        public int ModifiedBy { get; set; }
 
     }
 

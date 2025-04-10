@@ -36,10 +36,10 @@ namespace Flexiconnect.Application.Services.Implementations
             await _actionPermissionMaster.AddActionPermission(actionPermissionMaster);
         }
 
-        public async Task UpdateActionPermissionMaster(ActionPermissionDto actionPermissionDto)
+        public async Task UpdateActionPermissionMaster(ActionPermissionUpdateDto actionPermissionUpdateDto)
         {
             ActionPermissionMaster actionPermissionMaster = new ActionPermissionMaster();
-            actionPermissionMaster = _mapper.Map<ActionPermissionDto, ActionPermissionMaster>(actionPermissionDto);
+            actionPermissionMaster = _mapper.Map<ActionPermissionUpdateDto, ActionPermissionMaster>(actionPermissionUpdateDto);
             await _actionPermissionMaster.UpdateActionPermission(actionPermissionMaster);
         }
 

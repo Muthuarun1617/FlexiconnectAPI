@@ -45,7 +45,7 @@ namespace Flexiconnect.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateActionMenuData(ActionMenuDto actionMenuDto)
+        public async Task<IActionResult> UpdateActionMenuData(ActionMenuUpdateDto actionMenuDto)
         {
             try
             {

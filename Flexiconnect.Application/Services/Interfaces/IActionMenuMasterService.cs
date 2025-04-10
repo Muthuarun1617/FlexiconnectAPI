@@ -8,7 +8,7 @@ namespace Flexiconnect.Application.Services.Interfaces
 
         Task AddActionMenuMaster(ActionMenuAddDto actionMenuAddDto);
 
-        Task UpdateActionMenuMaster(ActionMenuDto actionMenuDto);
+        Task UpdateActionMenuMaster(ActionMenuUpdateDto actionMenuDto);
 
         Task DeleteActionMenuMaster(ActionMenuDeleteDto actionMenuDeleteDto);
     }

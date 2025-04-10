@@ -13,7 +13,7 @@ namespace Flexiconnect.Application.Services.Interfaces
 
         Task AddActionPermissionMaster(ActionPermissionAddDto actionPermissionAddDto);
 
-        Task UpdateActionPermissionMaster(ActionPermissionDto actionPermissionDto);
+        Task UpdateActionPermissionMaster(ActionPermissionUpdateDto actionPermissionUpdateDto);
 
         Task DeleteActionPermissionMaster(ActionPermissionDeleteDto actionPermissionDeleteDto);
     }

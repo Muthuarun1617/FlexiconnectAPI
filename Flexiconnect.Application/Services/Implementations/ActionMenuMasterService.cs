@@ -31,10 +31,10 @@ namespace Flexiconnect.Application.Services.Implementations
             await _actionMenuMaster.AddActionMenu(actionMenuMaster);
         }
 
-        public async Task UpdateActionMenuMaster(ActionMenuDto actionMenuDto)
+        public async Task UpdateActionMenuMaster(ActionMenuUpdateDto actionMenuDto)
         {
             ActionMenuMaster actionMenuMaster = new ActionMenuMaster();
-            actionMenuMaster = _mapper.Map<ActionMenuDto, ActionMenuMaster>(actionMenuDto);
+            actionMenuMaster = _mapper.Map<ActionMenuUpdateDto, ActionMenuMaster>(actionMenuDto);
             await _actionMenuMaster.UpdateActionMenu(actionMenuMaster);
         }
 
