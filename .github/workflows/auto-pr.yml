@@ -1,0 +1,83 @@
+name: Create Pull Request for Admin Review
+
+on:
+  push:
+    branches:
+      - 'feature/*'  # Trigger on push to any feature branch
+
+jobs:
+  create_pull_request:
+    runs-on: ubuntu-latest
+    outputs:
+      pr_number: ${{ steps.get_pr_number.outputs.pr_number }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create Pull Request to Dev
+        id: create_pr
+        env:
+          GITHUB_TOKEN: ${{ secrets.RAJ_TOKEN }}
+        run: |
+          PR_TITLE="Automated PR from ${{ github.ref_name }}"
+          PR_BODY="This PR is created automatically after a push to ${{ github.ref_name }}. Please review and merge."
+          PR_HEAD="${{ github.ref_name }}"
+          PR_BASE="dev"
+
+          response=$(curl -s -X POST \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d "{\"title\":\"$PR_TITLE\",\"body\":\"$PR_BODY\",\"head\":\"$PR_HEAD\",\"base\":\"$PR_BASE\"}" \
+            https://api.github.com/repos/${{ github.repository }}/pulls)
+
+          pr_number=$(echo "$response" | jq -r '.number')
+          echo "Pull Request Number: $pr_number"
+          echo "pr_number=$pr_number" >> $GITHUB_OUTPUT
+
+      - name: Save PR Number
+        id: get_pr_number
+        run: echo "pr_number=${{ steps.create_pr.outputs.pr_number }}" >> $GITHUB_OUTPUT
+
+  auto_merge:
+    needs: create_pull_request
+    runs-on: ubuntu-latest
+    if: ${{ needs.create_pull_request.outputs.pr_number != '' }}
+
+    steps:
+      - name: Wait for code owner approvals (max 24 hours)
+        env:
+          GITHUB_TOKEN: ${{ secrets.RAJ_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ needs.create_pull_request.outputs.pr_number }}
+        run: |
+          echo "Waiting for code owner approvals..."
+          for i in {1..48}; do  # Check every 30 minutes for 24 hours (48 * 30min = 24h)
+            approvals=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+              https://api.github.com/repos/$REPO/pulls/$PR_NUMBER/reviews \
+              | jq '[.[] | select(.state == "APPROVED")] | length')
+
+            required_approvals=1  # Set this based on your branch protection rules
+
+            mergeable=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+              https://api.github.com/repos/$REPO/pulls/$PR_NUMBER \
+              | jq -r '.mergeable')
+
+            echo "Current approvals: $approvals"
+            echo "Mergeable: $mergeable"
+
+            if [[ "$approvals" -ge "$required_approvals" && "$mergeable" == "true" ]]; then
+              echo "Enough approvals and PR is mergeable. Merging..."
+              curl -s -X PUT -H "Authorization: token $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github.v3+json" \
+                https://api.github.com/repos/$REPO/pulls/$PR_NUMBER/merge \
+                -d '{"merge_method":"squash"}'
+              exit 0
+            else
+              echo "Not ready yet. Waiting 30 minutes..."
+              sleep 1800  # 30 minutes
+            fi
+          done
+
+          echo "Timed out waiting for approvals. No merge done."
+          exit 0
