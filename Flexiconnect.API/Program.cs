@@ -17,8 +17,11 @@ var connString = builder.Configuration.GetConnectionString("NextgenConn");
 builder.Services.AddSingleton<ApplicationDbContext>();
 builder.Services.AddScoped<IDbConnection>(sp => new SqlConnection(connString));
 builder.Services.AddScoped<IActionMenuMasterService, ActionMenuMasterService>();
+builder.Services.AddScoped<IActionPermissionMasterService, ActionPermissionMasterService>();
 builder.Services.AddScoped<IActionMenuMasterDomain, ActionMenuMasterDomain>();
+builder.Services.AddScoped<IActionPermissionMasterDomain, ActionPermissionMasterDomain>();
 builder.Services.AddScoped<IGenericRepository<ActionMenuMaster>, GenericRepository<ActionMenuMaster>>();
+builder.Services.AddScoped<IGenericRepository<ActionPermissionMaster>, GenericRepository<ActionPermissionMaster>>();
 // Add services to the container.
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddControllers();
