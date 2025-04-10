@@ -24,6 +24,9 @@ namespace Flexiconnect.Application.Mappings
             CreateMap<ActionPermissionUpdateDto, ActionPermissionMaster>();
             CreateMap<ActionPermissionDeleteDto, ActionPermissionMaster>();
             CreateMap<ActionPermissionDto, ActionPermissionMaster>();
+
+            CreateMap<ActionRoleMapping, ActionRoleMappingFetchDto>();
+            CreateMap<ActionRoleMappingDto, ActionRoleMapping>();
         }
     }
 }
