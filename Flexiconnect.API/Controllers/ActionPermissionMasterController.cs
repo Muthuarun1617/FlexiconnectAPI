@@ -1,27 +1,28 @@
 ﻿using Flexiconnect.Application.DTOs;
 using Flexiconnect.Application.Services.Interfaces;
 using Flexiconnect.Shared.Constants;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Flexiconnect.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ActionMenuMasterController : ControllerBase
+    public class ActionPermissionMasterController : ControllerBase
     {
-        private readonly IActionMenuMasterService _actionMenuMasterService;
-        public ActionMenuMasterController(IActionMenuMasterService actionMenuMasterService) 
+        private readonly IActionPermissionMasterService _actionPermissionMasterService;
+        public ActionPermissionMasterController(IActionPermissionMasterService actionPermissionMasterService)
         {
-            _actionMenuMasterService = actionMenuMasterService;
+            _actionPermissionMasterService = actionPermissionMasterService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetActionMenuData()
+        public async Task<IActionResult> GetActionPermissionData()
         {
-            IEnumerable<ActionMenuDto> response = new List<ActionMenuDto>();
+            IEnumerable<ActionPermissionDto> response = new List<ActionPermissionDto>();
             try
             {
-                response = await _actionMenuMasterService.GetActionMenuMaster();
+                response = await _actionPermissionMasterService.GetActionPermissionMaster();
                 return Ok(response);
             }
             catch (Exception ex)
@@ -31,11 +32,11 @@ namespace Flexiconnect.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddActionMenuData(ActionMenuAddDto actionMenuAddDto)
+        public async Task<IActionResult> AddActionPermissionData(ActionPermissionAddDto actionPermissionAddDto)
         {
             try
             {
-                await _actionMenuMasterService.AddActionMenuMaster(actionMenuAddDto);
+                await _actionPermissionMasterService.AddActionPermissionMaster(actionPermissionAddDto);
                 return Ok(new { message = MessageConstants.SuccessInsertResponse });
             }
             catch (Exception ex)
@@ -45,11 +46,11 @@ namespace Flexiconnect.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateActionMenuData(ActionMenuUpdateDto actionMenuDto)
+        public async Task<IActionResult> UpdateActionPermissionData(ActionPermissionUpdateDto actionPermissionUpdateDto)
         {
             try
             {
-                await _actionMenuMasterService.UpdateActionMenuMaster(actionMenuDto);
+                await _actionPermissionMasterService.UpdateActionPermissionMaster(actionPermissionUpdateDto);
                 return Ok(new { message = MessageConstants.SuccessUpdateResponse });
             }
             catch (Exception ex)
@@ -59,11 +60,11 @@ namespace Flexiconnect.API.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteActionMenuData(ActionMenuDeleteDto actionMenuDeleteDto)
+        public async Task<IActionResult> DeleteActionPermissionData(ActionPermissionDeleteDto actionPermissionDeleteDto)
         {
             try
             {
-                await _actionMenuMasterService.DeleteActionMenuMaster(actionMenuDeleteDto);
+                await _actionPermissionMasterService.DeleteActionPermissionMaster(actionPermissionDeleteDto);
                 return Ok(new { message = MessageConstants.SuccessDeleteResponse });
             }
             catch (Exception ex)
