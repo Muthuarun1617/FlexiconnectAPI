@@ -23,7 +23,7 @@ namespace Flexiconnect.Domain.Implementation
         public async Task<IEnumerable<ActionPermissionMaster>> GetActionPermission()
         {
             IEnumerable<ActionPermissionMaster> result = new List<ActionPermissionMaster>();
-            result = await _genericRepository.GetAsync(DBConstants.FetchActionPermissionSP);
+            result = await _genericRepository.GetAsync(DBConstants.FetchActionPermissionSP, new DynamicParameters());
             return result;
         }
 

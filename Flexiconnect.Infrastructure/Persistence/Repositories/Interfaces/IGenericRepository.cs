@@ -4,7 +4,7 @@ namespace Flexiconnect.Infrastructure.Persistence.Repositories.Interfaces
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<IEnumerable<T>> GetAsync(string objectname);
+        Task<IEnumerable<T>> GetAsync(string objectname, DynamicParameters parameters);
 
         Task AddAsync(string objectname, DynamicParameters parameters);
 

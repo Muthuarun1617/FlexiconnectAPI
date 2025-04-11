@@ -18,10 +18,13 @@ builder.Services.AddSingleton<ApplicationDbContext>();
 builder.Services.AddScoped<IDbConnection>(sp => new SqlConnection(connString));
 builder.Services.AddScoped<IActionMenuMasterService, ActionMenuMasterService>();
 builder.Services.AddScoped<IActionPermissionMasterService, ActionPermissionMasterService>();
+builder.Services.AddScoped<IActionRoleMappingService, ActionRoleMappingService>();
 builder.Services.AddScoped<IActionMenuMasterDomain, ActionMenuMasterDomain>();
 builder.Services.AddScoped<IActionPermissionMasterDomain, ActionPermissionMasterDomain>();
+builder.Services.AddScoped<IActionRoleMappingDomain, ActionRoleMappingDomain>();
 builder.Services.AddScoped<IGenericRepository<ActionMenuMaster>, GenericRepository<ActionMenuMaster>>();
 builder.Services.AddScoped<IGenericRepository<ActionPermissionMaster>, GenericRepository<ActionPermissionMaster>>();
+builder.Services.AddScoped<IGenericRepository<ActionRoleMapping>, GenericRepository<ActionRoleMapping>>();
 // Add services to the container.
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddControllers();

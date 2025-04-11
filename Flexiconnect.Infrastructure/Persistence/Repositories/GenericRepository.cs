@@ -10,11 +10,11 @@ namespace Flexiconnect.Infrastructure.Persistence.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<T>> GetAsync(string objectname)
+        public async Task<IEnumerable<T>> GetAsync(string objectname, DynamicParameters parameters)
         {
             using (var conn = _context.CreateConnection())
             {
-                return await conn.QueryAsync<T>(objectname, null, commandType: System.Data.CommandType.StoredProcedure);
+                return await conn.QueryAsync<T>(objectname, parameters, commandType: System.Data.CommandType.StoredProcedure);
             }
         }
 

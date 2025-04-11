@@ -17,7 +17,7 @@ namespace Flexiconnect.Domain.Implementation
         public async Task<IEnumerable<ActionMenuMaster>> GetActionMenu()
         {
             IEnumerable<ActionMenuMaster>  result = new List<ActionMenuMaster>();
-            result = await _genericRepository.GetAsync(DBConstants.FetchActionMenuSP);
+            result = await _genericRepository.GetAsync(DBConstants.FetchActionMenuSP, new DynamicParameters());
             return result;
         }
 
