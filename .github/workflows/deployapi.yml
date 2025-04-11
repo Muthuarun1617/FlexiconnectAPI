@@ -27,10 +27,33 @@ jobs:
       - name: Publish
         run: dotnet publish --configuration Release --output ./publish
 
+      # Upload Build Artifact
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifact
+          path: ./publish
+
+      # Save and Upload Build Logs
+      - name: Save Build Logs
+        run: |
+          mkdir logs
+          echo "Build completed at $(Get-Date -Format u)" > logs/build-log.txt
+          echo "Commit SHA: $env:GITHUB_SHA" >> logs/build-log.txt
+          Get-Content logs/build-log.txt
+
+      - name: Upload Logs as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-logs
+          path: logs/
+
+      # Deploy to Azure Web App
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'devflexiconnect'
           publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
           package: ./publish
+
 
