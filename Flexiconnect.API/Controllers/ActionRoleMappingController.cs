@@ -1,7 +1,6 @@
 ﻿using Flexiconnect.Application.DTOs;
 using Flexiconnect.Application.Services.Interfaces;
 using Flexiconnect.Shared.Constants;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Flexiconnect.API.Controllers

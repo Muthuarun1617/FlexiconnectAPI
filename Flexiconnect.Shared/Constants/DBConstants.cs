@@ -13,5 +13,7 @@
         public const string DeleteActionPermissionSP = "dbo.sp_delete_permission";
         public const string FetchActionRoleMappingSP = "dbo.sp_fetch_rolemapping";
         public const string InsertUpdateActionRoleMappingSP = "dbo.sp_insert_update_rolemapping";
+        public const string FetchActionRoleUserMappingSP = "dbo.sp_fetch_roleusermapping";
+        public const string InsertUpdateActionRoleUserMappingSP = "dbo.sp_insert_update_roleusermapping";
     }
 }
