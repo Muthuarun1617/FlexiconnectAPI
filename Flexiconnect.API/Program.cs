@@ -35,6 +35,9 @@ builder.Services.AddScoped<IActionRoleMappingDomain, ActionRoleMappingDomain>();
 builder.Services.AddScoped<IGenericRepository<ActionMenuMaster>, GenericRepository<ActionMenuMaster>>();
 builder.Services.AddScoped<IGenericRepository<ActionPermissionMaster>, GenericRepository<ActionPermissionMaster>>();
 builder.Services.AddScoped<IGenericRepository<ActionRoleMapping>, GenericRepository<ActionRoleMapping>>();
+builder.Services.AddScoped<IOrderServices, OrderService>();
+builder.Services.AddScoped<IOrderDomain, OrderDomain>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 // Add services to the container.
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddControllers();

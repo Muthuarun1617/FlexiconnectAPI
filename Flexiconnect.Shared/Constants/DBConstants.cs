@@ -13,5 +13,11 @@
         public const string DeleteActionPermissionSP = "dbo.sp_delete_permission";
         public const string FetchActionRoleMappingSP = "dbo.sp_fetch_rolemapping";
         public const string InsertUpdateActionRoleMappingSP = "dbo.sp_insert_update_rolemapping";
+        public const string GetDealerByRole = "dbo.sp_GetDealerByRole";
+        public const string GetFilterProduct = "dbo.sp_GetProductFilterByDealerCode";
+        public const string GetProductCatalogue = "dbo.sp_GetProductCatelogue";
+        public const string GetFrequentlyOrderProducts = "dbo.Sp_GetFrequentlyOrderProduct";
+        public const string ProductDetailsByVariant = "dbo.sp_GetProductDetailsByVariant";
+        public const string ProductVariant = "dbo.sp_GetProductVariants";
     }
 }

@@ -11,7 +11,7 @@ namespace Flexiconnect.Application.Mappings
 {
     public class MappingProfile : Profile
     {
-        public MappingProfile() 
+        public MappingProfile()
         {
             CreateMap<ActionMenuMaster, ActionMenuDto>();
             CreateMap<ActionMenuAddDto, ActionMenuMaster>();
@@ -27,6 +27,16 @@ namespace Flexiconnect.Application.Mappings
 
             CreateMap<ActionRoleMapping, ActionRoleMappingFetchDto>();
             CreateMap<ActionRoleMappingDto, ActionRoleMapping>();
+
+            CreateMap<DealerRequest, Order>();
+            CreateMap<Order, OrderDto>();
+            CreateMap<DomainDealer, Dealer>();
+            CreateMap<Order, DealerCategory>();
+            CreateMap<ProductCatelogue, Order>();
+            CreateMap<Order, ResponseProductCatelogue>();
+            CreateMap<Order, FrequentlyOrderProducutsDto>();
+            CreateMap<Order, ProductDetailsByVariant>();
+            CreateMap<Order, ProductVariant>();
         }
     }
 }
