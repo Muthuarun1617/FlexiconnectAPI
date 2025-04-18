@@ -11,10 +11,10 @@ namespace Flexiconnect.Application.Services.Interfaces
     {
         Task<OrderDto> GetDealerByRole(DealerRequest dealerRequest);
         Task<DealerCategory> GetProductFilter(string DealerCode);
-        Task<ResponseProductCatelogue> GetProductCatalogue(ProductCatelogue productCatelogue);
+        Task<ResponseProductCatelogue> GetProductCatalogue(ProductCatelogueDto productCatelogue);
         Task<FrequentlyOrderProducutsDto> GetFrequentlyOrderProducts(string DealerCode);
-        Task<ProductDetailsByVariant> GetProductDetailsByVariant(string DealerCode, string Color, string Size, string Dimension, decimal Thickness);
-        Task<ProductVariant> GetProductsVariant(string DealerCode, string Product);
+        Task<ProductDetailsByVariantDto> GetProductDetailsByVariant(string DealerCode, string Color, string Size, string Dimension, decimal Thickness);
+        Task<ProductVariantDto> GetProductsVariant(string DealerCode, string Product);
 
     }
 }

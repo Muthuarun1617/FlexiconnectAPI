@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Flexiconnect.Application.DTOs
 {
-    public class ProductDetailsByVariant
+    public class ProductDetailsByVariantDto
     {
         public string? SalesOrganization { get; set; }
         public string? MaterialId { get; set; }

@@ -32,11 +32,11 @@ namespace Flexiconnect.Application.Mappings
             CreateMap<Order, OrderDto>();
             CreateMap<DomainDealer, Dealer>();
             CreateMap<Order, DealerCategory>();
-            CreateMap<ProductCatelogue, Order>();
+            CreateMap<ProductCatelogueDto, Order>();
             CreateMap<Order, ResponseProductCatelogue>();
             CreateMap<Order, FrequentlyOrderProducutsDto>();
-            CreateMap<Order, ProductDetailsByVariant>();
-            CreateMap<Order, ProductVariant>();
+            CreateMap<Order, ProductDetailsByVariantDto>();
+            CreateMap<Order, ProductVariantDto>();
         }
     }
 }

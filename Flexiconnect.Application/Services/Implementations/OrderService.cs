@@ -45,11 +45,11 @@ namespace Flexiconnect.Application.Services.Implementations
         }
 
 
-        public async Task<ResponseProductCatelogue> GetProductCatalogue(ProductCatelogue productCatelogue)
+        public async Task<ResponseProductCatelogue> GetProductCatalogue(ProductCatelogueDto productCatelogue)
         {
             Order actionOrder = new Order();
             ResponseProductCatelogue dealerCategory = new ResponseProductCatelogue();
-            actionOrder = _mapper.Map<ProductCatelogue, Order>(productCatelogue);
+            actionOrder = _mapper.Map<ProductCatelogueDto, Order>(productCatelogue);
 
             var response = await _actionOrderDomain.GetProductCatalogue(actionOrder);
 
@@ -66,19 +66,19 @@ namespace Flexiconnect.Application.Services.Implementations
             return frequentlyOrderProducutsDto;
         }
 
-        public async Task<ProductDetailsByVariant> GetProductDetailsByVariant(string DealerCode, string Color, string Size, string Dimension, decimal Thickness)
+        public async Task<ProductDetailsByVariantDto> GetProductDetailsByVariant(string DealerCode, string Color, string Size, string Dimension, decimal Thickness)
         {
-            ProductDetailsByVariant productDetailsByVariant=new ProductDetailsByVariant();
+            ProductDetailsByVariantDto productDetailsByVariant=new ProductDetailsByVariantDto();
             var response = await _actionOrderDomain.GetProductDetailsByVariant(DealerCode,Color,Size,Dimension,Thickness);
-            productDetailsByVariant = _mapper.Map<Order, ProductDetailsByVariant>(response);
+            productDetailsByVariant = _mapper.Map<Order, ProductDetailsByVariantDto>(response);
             return productDetailsByVariant;
         }
 
-        public async Task<ProductVariant> GetProductsVariant(string DealerCode, string Product)
+        public async Task<ProductVariantDto> GetProductsVariant(string DealerCode, string Product)
         {
-            ProductVariant productVariant = new ProductVariant();
+            ProductVariantDto productVariant = new ProductVariantDto();
             var response = await _actionOrderDomain.GetProductsVariant(DealerCode, Product);
-            productVariant = _mapper.Map<Order, ProductVariant>(response);
+            productVariant = _mapper.Map<Order, ProductVariantDto>(response);
             throw new NotImplementedException();
         }
     }

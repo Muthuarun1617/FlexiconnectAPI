@@ -46,7 +46,7 @@ namespace Flexiconnect.API.Controllers
             }
         }
         [HttpPost("GetProductCatelogue")]
-        public async Task<IActionResult> GetProductCatelogue(ProductCatelogue dealerCategory)
+        public async Task<IActionResult> GetProductCatelogue(ProductCatelogueDto dealerCategory)
         {
             ResponseProductCatelogue response = new ResponseProductCatelogue();
             try
@@ -76,7 +76,7 @@ namespace Flexiconnect.API.Controllers
         [HttpGet("GetProductDetailsByVariant")]
         public async Task<IActionResult> GetProductDetailsByVariant(string DealerCode, string Color, string Size, string Dimension, decimal Thickness)
         {
-            ProductDetailsByVariant productDetailsByVariant = new ProductDetailsByVariant();
+            ProductDetailsByVariantDto productDetailsByVariant = new ProductDetailsByVariantDto();
             try
             {
                 productDetailsByVariant = await _orderServices.GetProductDetailsByVariant(DealerCode, Color, Size, Dimension, Thickness);

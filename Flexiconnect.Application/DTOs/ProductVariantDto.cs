@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Flexiconnect.Application.DTOs
 {
-    public class ProductVariant
+    public class ProductVariantDto
     {
         public string? DealerCode { get; set; }
         public string? Product { get; set; }
