@@ -3,11 +3,6 @@ using Flexiconnect.Application.DTOs;
 using Flexiconnect.Application.Services.Interfaces;
 using Flexiconnect.Domain.Entities;
 using Flexiconnect.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Flexiconnect.Application.Services.Implementations
 {
@@ -29,10 +24,10 @@ namespace Flexiconnect.Application.Services.Implementations
             return actionRoleMappings;
         }
 
-        public async Task AddActionRoleMapping(ActionRoleMappingDto actionRoleMappingDto)
+        public async Task AddActionRoleMapping(IEnumerable<ActionRoleMappingDto> actionRoleMappingDto)
         {
-            ActionRoleMapping actionRoleMapping = new ActionRoleMapping();
-            actionRoleMapping = _mapper.Map<ActionRoleMappingDto, ActionRoleMapping>(actionRoleMappingDto);
+            IEnumerable<ActionRoleMapping> actionRoleMapping = new List<ActionRoleMapping>();
+            actionRoleMapping = _mapper.Map<IEnumerable<ActionRoleMappingDto>, IEnumerable<ActionRoleMapping>>(actionRoleMappingDto);
             await _actionRoleMapping.AddActionRoleMapping(actionRoleMapping);
         }
     }

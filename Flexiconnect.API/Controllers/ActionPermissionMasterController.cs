@@ -32,7 +32,7 @@ namespace Flexiconnect.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddActionPermissionData(ActionPermissionAddDto actionPermissionAddDto)
+        public async Task<IActionResult> AddActionPermissionData(IEnumerable<ActionPermissionAddDto> actionPermissionAddDto)
         {
             try
             {
@@ -46,7 +46,7 @@ namespace Flexiconnect.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateActionPermissionData(ActionPermissionUpdateDto actionPermissionUpdateDto)
+        public async Task<IActionResult> UpdateActionPermissionData(IEnumerable<ActionPermissionUpdateDto> actionPermissionUpdateDto)
         {
             try
             {

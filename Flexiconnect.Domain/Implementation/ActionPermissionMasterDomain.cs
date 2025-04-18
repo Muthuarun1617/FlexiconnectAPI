@@ -27,25 +27,37 @@ namespace Flexiconnect.Domain.Implementation
             return result;
         }
 
-        public async Task AddActionPermission(ActionPermissionMaster actionPermissionMaster)
+        public async Task AddActionPermission(IEnumerable<ActionPermissionMaster> actionPermissionMaster)
         {
-            DynamicParameters dynamicParameters = new DynamicParameters();
-            dynamicParameters.Add("PermissionName", actionPermissionMaster.PermissionName);
-            dynamicParameters.Add("IsActive", actionPermissionMaster.IsActive);
-            dynamicParameters.Add("CreatedBy", actionPermissionMaster.CreatedBy);
+            if (actionPermissionMaster.Count() > 0)
+            {
+                foreach (var item in actionPermissionMaster)
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("PermissionName", item.PermissionName);
+                    dynamicParameters.Add("IsActive", item.IsActive);
+                    dynamicParameters.Add("CreatedBy", item.CreatedBy);
 
-            await _genericRepository.AddAsync(DBConstants.InsertActionPermissionSP, dynamicParameters);
+                    await _genericRepository.AddAsync(DBConstants.InsertActionPermissionSP, dynamicParameters);
+                }
+            }
         }
 
-        public async Task UpdateActionPermission(ActionPermissionMaster actionPermissionMaster)
+        public async Task UpdateActionPermission(IEnumerable<ActionPermissionMaster> actionPermissionMaster)
         {
-            DynamicParameters dynamicParameters = new DynamicParameters();
-            dynamicParameters.Add("PermissionID", actionPermissionMaster.PermissionID);
-            dynamicParameters.Add("PermissionName", actionPermissionMaster.PermissionName);
-            dynamicParameters.Add("IsActive", actionPermissionMaster.IsActive);
-            dynamicParameters.Add("ModifiedBy", actionPermissionMaster.ModifiedBy);
+            if (actionPermissionMaster.Count() > 0)
+            {
+                foreach (var item in actionPermissionMaster)
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("PermissionID", item.PermissionID);
+                    dynamicParameters.Add("PermissionName", item.PermissionName);
+                    dynamicParameters.Add("IsActive", item.IsActive);
+                    dynamicParameters.Add("ModifiedBy", item.ModifiedBy);
 
-            await _genericRepository.UpdateAsync(DBConstants.UpdateActionPermissionSP, dynamicParameters);
+                    await _genericRepository.UpdateAsync(DBConstants.UpdateActionPermissionSP, dynamicParameters);
+                }
+            }
         }
 
         public async Task DeleteActionPermission(ActionPermissionMaster actionPermissionMaster)

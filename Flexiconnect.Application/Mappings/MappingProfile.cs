@@ -27,6 +27,9 @@ namespace Flexiconnect.Application.Mappings
 
             CreateMap<ActionRoleMapping, ActionRoleMappingFetchDto>();
             CreateMap<ActionRoleMappingDto, ActionRoleMapping>();
+
+            CreateMap<ActionRoleUserMapping, ActionRoleUserMappingFetchDto>();
+            CreateMap<ActionRoleUserMappingDto, ActionRoleUserMapping>();
         }
     }
 }
