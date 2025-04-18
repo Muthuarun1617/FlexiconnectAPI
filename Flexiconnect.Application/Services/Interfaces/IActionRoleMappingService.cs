@@ -11,6 +11,6 @@ namespace Flexiconnect.Application.Services.Interfaces
     {
         Task<IEnumerable<ActionRoleMappingFetchDto>> GetActionRoleMapping(int RoleID);
 
-        Task AddActionRoleMapping(ActionRoleMappingDto actionRoleMappingDto);
+        Task AddActionRoleMapping(IEnumerable<ActionRoleMappingDto> actionRoleMappingDto);
     }
 }

@@ -31,7 +31,7 @@ namespace Flexiconnect.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddActionRoleMappingData(ActionRoleMappingDto actionRoleMappingDto)
+        public async Task<IActionResult> AddActionRoleMappingData(IEnumerable<ActionRoleMappingDto> actionRoleMappingDto)
         {
             try
             {

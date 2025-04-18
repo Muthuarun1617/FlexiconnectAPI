@@ -17,6 +17,7 @@ namespace Flexiconnect.Application.DTOs
 
     public class ActionRoleMappingFetchDto
     {
+        public int RoleMappingID { get; set; }
         public int RoleID { get; set; }
         public int ActionMenuID { get; set; }
         public string? ActionMenuName { get; set; }

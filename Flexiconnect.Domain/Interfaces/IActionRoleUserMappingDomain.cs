@@ -5,6 +5,6 @@ namespace Flexiconnect.Domain.Interfaces
     public interface IActionRoleUserMappingDomain
     {
         Task<IEnumerable<ActionRoleUserMapping>> GetActionRoleUserMapping(int RoleID, int UserID);
-        Task AddActionRoleUserMapping(ActionRoleUserMapping actionRoleUserMapping);
+        Task AddActionRoleUserMapping(IEnumerable<ActionRoleUserMapping> actionRoleUserMapping);
     }
 }

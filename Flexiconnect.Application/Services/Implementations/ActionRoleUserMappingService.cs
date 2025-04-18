@@ -24,10 +24,10 @@ namespace Flexiconnect.Application.Services.Implementations
             return actionRoleUserMappings;
         }
 
-        public async Task AddActionRoleUserMapping(ActionRoleUserMappingDto actionRoleUserMappingDto)
+        public async Task AddActionRoleUserMapping(IEnumerable<ActionRoleUserMappingDto> actionRoleUserMappingDto)
         {
-            ActionRoleUserMapping actionRoleUserMapping = new ActionRoleUserMapping();
-            actionRoleUserMapping = _mapper.Map<ActionRoleUserMappingDto, ActionRoleUserMapping>(actionRoleUserMappingDto);
+            IEnumerable<ActionRoleUserMapping> actionRoleUserMapping = new List<ActionRoleUserMapping>();
+            actionRoleUserMapping = _mapper.Map<IEnumerable<ActionRoleUserMappingDto>, IEnumerable<ActionRoleUserMapping>>(actionRoleUserMappingDto);
             await _actionRoleUserMapping.AddActionRoleUserMapping(actionRoleUserMapping);
         }
     }

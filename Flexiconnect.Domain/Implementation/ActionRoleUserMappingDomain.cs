@@ -26,15 +26,21 @@ namespace Flexiconnect.Domain.Implementation
             return result;
         }
 
-        public async Task AddActionRoleUserMapping(ActionRoleUserMapping actionRoleUserMapping)
+        public async Task AddActionRoleUserMapping(IEnumerable<ActionRoleUserMapping> actionRoleUserMapping)
         {
-            DynamicParameters dynamicParameters = new DynamicParameters();
-            dynamicParameters.Add("RoleMappingID", actionRoleUserMapping.RoleMappingID);
-            dynamicParameters.Add("UserID", actionRoleUserMapping.UserID);
-            dynamicParameters.Add("IsActive", actionRoleUserMapping.IsActive);
-            dynamicParameters.Add("CreatedBy", actionRoleUserMapping.CreatedBy);
+            if (actionRoleUserMapping.Count() > 0)
+            {
+                foreach (var item in actionRoleUserMapping)
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("RoleMappingID", item.RoleMappingID);
+                    dynamicParameters.Add("UserID", item.UserID);
+                    dynamicParameters.Add("IsActive", item.IsActive);
+                    dynamicParameters.Add("CreatedBy", item.CreatedBy);
 
-            await _genericRepository.AddAsync(DBConstants.InsertUpdateActionRoleUserMappingSP, dynamicParameters);
+                    await _genericRepository.AddAsync(DBConstants.InsertUpdateActionRoleUserMappingSP, dynamicParameters);
+                }
+            }
         }
     }
 }
