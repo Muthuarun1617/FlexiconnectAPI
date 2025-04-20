@@ -31,7 +31,7 @@ namespace Flexiconnect.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddActionMenuData(ActionMenuAddDto actionMenuAddDto)
+        public async Task<IActionResult> AddActionMenuData(IEnumerable<ActionMenuAddDto> actionMenuAddDto)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace Flexiconnect.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateActionMenuData(ActionMenuUpdateDto actionMenuDto)
+        public async Task<IActionResult> UpdateActionMenuData(IEnumerable<ActionMenuUpdateDto> actionMenuDto)
         {
             try
             {

@@ -37,6 +37,10 @@ namespace Flexiconnect.Application.Mappings
             CreateMap<Order, FrequentlyOrderProducutsDto>();
             CreateMap<Order, ProductDetailsByVariantDto>();
             CreateMap<Order, ProductVariantDto>();
+            
+            CreateMap<ActionRoleUserMapping, ActionRoleUserMappingFetchDto>();
+            CreateMap<ActionRoleUserMappingDto, ActionRoleUserMapping>();
+
         }
     }
 }

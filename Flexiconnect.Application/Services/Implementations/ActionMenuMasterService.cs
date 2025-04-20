@@ -24,17 +24,17 @@ namespace Flexiconnect.Application.Services.Implementations
             return actionMenuMasters;
         }
 
-        public async Task AddActionMenuMaster(ActionMenuAddDto actionMenuAddDto)
+        public async Task AddActionMenuMaster(IEnumerable<ActionMenuAddDto> actionMenuAddDto)
         {
-            ActionMenuMaster actionMenuMaster = new ActionMenuMaster();
-            actionMenuMaster = _mapper.Map<ActionMenuAddDto, ActionMenuMaster>(actionMenuAddDto);
+            IEnumerable<ActionMenuMaster> actionMenuMaster = new List<ActionMenuMaster>();
+            actionMenuMaster = _mapper.Map< IEnumerable<ActionMenuAddDto>, IEnumerable<ActionMenuMaster>>(actionMenuAddDto);
             await _actionMenuMaster.AddActionMenu(actionMenuMaster);
         }
 
-        public async Task UpdateActionMenuMaster(ActionMenuUpdateDto actionMenuDto)
+        public async Task UpdateActionMenuMaster(IEnumerable<ActionMenuUpdateDto> actionMenuDto)
         {
-            ActionMenuMaster actionMenuMaster = new ActionMenuMaster();
-            actionMenuMaster = _mapper.Map<ActionMenuUpdateDto, ActionMenuMaster>(actionMenuDto);
+            IEnumerable<ActionMenuMaster> actionMenuMaster = new List<ActionMenuMaster>();
+            actionMenuMaster = _mapper.Map<IEnumerable<ActionMenuUpdateDto>, IEnumerable<ActionMenuMaster>>(actionMenuDto);
             await _actionMenuMaster.UpdateActionMenu(actionMenuMaster);
         }
 

@@ -11,9 +11,9 @@ namespace Flexiconnect.Domain.Interfaces
     {
         Task<IEnumerable<ActionPermissionMaster>> GetActionPermission();
 
-        Task AddActionPermission(ActionPermissionMaster actionMenu);
+        Task AddActionPermission(IEnumerable<ActionPermissionMaster> actionMenu);
 
-        Task UpdateActionPermission(ActionPermissionMaster actionMenu);
+        Task UpdateActionPermission(IEnumerable<ActionPermissionMaster> actionMenu);
 
         Task DeleteActionPermission(ActionPermissionMaster actionMenu);
     }

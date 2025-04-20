@@ -6,9 +6,9 @@ namespace Flexiconnect.Domain.Interfaces
     {
         Task<IEnumerable<ActionMenuMaster>> GetActionMenu();
 
-        Task AddActionMenu(ActionMenuMaster actionMenu);
+        Task AddActionMenu(IEnumerable<ActionMenuMaster> actionMenu);
 
-        Task UpdateActionMenu(ActionMenuMaster actionMenu);
+        Task UpdateActionMenu(IEnumerable<ActionMenuMaster> actionMenu);
 
         Task DeleteActionMenu(ActionMenuMaster actionMenu);
     }

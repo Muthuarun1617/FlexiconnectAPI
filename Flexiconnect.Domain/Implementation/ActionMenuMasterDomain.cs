@@ -21,25 +21,37 @@ namespace Flexiconnect.Domain.Implementation
             return result;
         }
 
-        public async Task AddActionMenu(ActionMenuMaster actionMenuMaster)
+        public async Task AddActionMenu(IEnumerable<ActionMenuMaster> actionMenuMaster)
         {
-            DynamicParameters dynamicParameters = new DynamicParameters();
-            dynamicParameters.Add("ActionMenuName", actionMenuMaster.ActionMenuName);
-            dynamicParameters.Add("IsActive", actionMenuMaster.IsActive);
-            dynamicParameters.Add("CreatedBy", actionMenuMaster.CreatedBy);
+            if(actionMenuMaster.Count() > 0)
+            {
+                foreach (var item in actionMenuMaster)
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("ActionMenuName", item.ActionMenuName);
+                    dynamicParameters.Add("IsActive", item.IsActive);
+                    dynamicParameters.Add("CreatedBy", item.CreatedBy);
 
-            await _genericRepository.AddAsync(DBConstants.InsertActionMenuSP, dynamicParameters);
+                    await _genericRepository.AddAsync(DBConstants.InsertActionMenuSP, dynamicParameters);
+                }
+            }
         }
 
-        public async Task UpdateActionMenu(ActionMenuMaster actionMenuMaster)
+        public async Task UpdateActionMenu(IEnumerable<ActionMenuMaster> actionMenuMaster)
         {
-            DynamicParameters dynamicParameters = new DynamicParameters();
-            dynamicParameters.Add("ActionMenuID", actionMenuMaster.ActionMenuID);
-            dynamicParameters.Add("ActionMenuName", actionMenuMaster.ActionMenuName);
-            dynamicParameters.Add("IsActive", actionMenuMaster.IsActive);
-            dynamicParameters.Add("ModifiedBy", actionMenuMaster.ModifiedBy);
+            if (actionMenuMaster.Count() > 0)
+            {
+                foreach (var item in actionMenuMaster)
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("ActionMenuID", item.ActionMenuID);
+                    dynamicParameters.Add("ActionMenuName", item.ActionMenuName);
+                    dynamicParameters.Add("IsActive", item.IsActive);
+                    dynamicParameters.Add("ModifiedBy", item.ModifiedBy);
 
-            await _genericRepository.UpdateAsync(DBConstants.UpdateActionMenuSP, dynamicParameters);
+                    await _genericRepository.UpdateAsync(DBConstants.UpdateActionMenuSP, dynamicParameters);
+                }
+            }  
         }
 
         public async Task DeleteActionMenu(ActionMenuMaster actionMenuMaster)
