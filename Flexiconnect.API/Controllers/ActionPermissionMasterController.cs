@@ -31,6 +31,21 @@ namespace Flexiconnect.API.Controllers
             }
         }
 
+        [HttpGet("{permissionName}")]
+        public async Task<IActionResult> GetActionPermissionDataByName(string permissionName)
+        {
+            IEnumerable<ActionPermissionDto> response = new List<ActionPermissionDto>();
+            try
+            {
+                response = await _actionPermissionMasterService.GetActionPermissionMasterByName(permissionName);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = MessageConstants.ErrorResponse });
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> AddActionPermissionData(IEnumerable<ActionPermissionAddDto> actionPermissionAddDto)
         {

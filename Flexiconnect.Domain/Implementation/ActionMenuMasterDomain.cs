@@ -21,6 +21,15 @@ namespace Flexiconnect.Domain.Implementation
             return result;
         }
 
+        public async Task<IEnumerable<ActionMenuMaster>> GetActionMenuByName(string menuName)
+        {
+            IEnumerable<ActionMenuMaster> result = new List<ActionMenuMaster>();
+            DynamicParameters dynamicParameters = new DynamicParameters();
+            dynamicParameters.Add("ActionMenuName", menuName);
+            result = await _genericRepository.GetAsync(DBConstants.FetchActionMenuByNameSP, dynamicParameters);
+            return result;
+        }
+
         public async Task AddActionMenu(IEnumerable<ActionMenuMaster> actionMenuMaster)
         {
             if(actionMenuMaster.Count() > 0)

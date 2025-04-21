@@ -27,6 +27,15 @@ namespace Flexiconnect.Domain.Implementation
             return result;
         }
 
+        public async Task<IEnumerable<ActionPermissionMaster>> GetActionPermissionByName(string permissionName)
+        {
+            IEnumerable<ActionPermissionMaster> result = new List<ActionPermissionMaster>();
+            DynamicParameters dynamicParameters = new DynamicParameters();
+            dynamicParameters.Add("PermissionName", permissionName);
+            result = await _genericRepository.GetAsync(DBConstants.FetchActionPermissionByNameSP, dynamicParameters);
+            return result;
+        }
+
         public async Task AddActionPermission(IEnumerable<ActionPermissionMaster> actionPermissionMaster)
         {
             if (actionPermissionMaster.Count() > 0)

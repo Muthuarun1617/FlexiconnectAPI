@@ -30,6 +30,21 @@ namespace Flexiconnect.API.Controllers
             }
         }
 
+        [HttpGet("{menuName}")]
+        public async Task<IActionResult> GetActionMenuDataByName(string menuName)
+        {
+            IEnumerable<ActionMenuDto> response = new List<ActionMenuDto>();
+            try
+            {
+                response = await _actionMenuMasterService.GetActionMenuMasterByName(menuName);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = MessageConstants.ErrorResponse });
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> AddActionMenuData(IEnumerable<ActionMenuAddDto> actionMenuAddDto)
         {

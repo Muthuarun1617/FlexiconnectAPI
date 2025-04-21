@@ -24,6 +24,14 @@ namespace Flexiconnect.Application.Services.Implementations
             return actionMenuMasters;
         }
 
+        public async Task<IEnumerable<ActionMenuDto>> GetActionMenuMasterByName(string menuName)
+        {
+            IEnumerable<ActionMenuDto> actionMenuMasters = new List<ActionMenuDto>();
+            var response = await _actionMenuMaster.GetActionMenuByName(menuName);
+            actionMenuMasters = _mapper.Map<IEnumerable<ActionMenuMaster>, IEnumerable<ActionMenuDto>>(response.ToList());
+            return actionMenuMasters;
+        }
+
         public async Task AddActionMenuMaster(IEnumerable<ActionMenuAddDto> actionMenuAddDto)
         {
             IEnumerable<ActionMenuMaster> actionMenuMaster = new List<ActionMenuMaster>();

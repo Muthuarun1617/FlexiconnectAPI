@@ -29,6 +29,14 @@ namespace Flexiconnect.Application.Services.Implementations
             return actionPermissionMasters;
         }
 
+        public async Task<IEnumerable<ActionPermissionDto>> GetActionPermissionMasterByName(string permissionName)
+        {
+            IEnumerable<ActionPermissionDto> actionPermissionMasters = new List<ActionPermissionDto>();
+            var response = await _actionPermissionMaster.GetActionPermissionByName(permissionName);
+            actionPermissionMasters = _mapper.Map<IEnumerable<ActionPermissionMaster>, IEnumerable<ActionPermissionDto>>(response.ToList());
+            return actionPermissionMasters;
+        }
+
         public async Task AddActionPermissionMaster(IEnumerable<ActionPermissionAddDto> actionPermissionAddDto)
         {
             IEnumerable<ActionPermissionMaster> actionPermissionMaster = new List<ActionPermissionMaster>();

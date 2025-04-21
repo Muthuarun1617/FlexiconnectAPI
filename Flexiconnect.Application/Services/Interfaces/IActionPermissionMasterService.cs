@@ -10,6 +10,7 @@ namespace Flexiconnect.Application.Services.Interfaces
     public interface IActionPermissionMasterService
     {
         Task<IEnumerable<ActionPermissionDto>> GetActionPermissionMaster();
+        Task<IEnumerable<ActionPermissionDto>> GetActionPermissionMasterByName(string permissionName);
 
         Task AddActionPermissionMaster(IEnumerable<ActionPermissionAddDto> actionPermissionAddDto);
 
