@@ -1,10 +1,3 @@
-Absolutely! Below is a **complete, professional `README.md`** file that includes a full project description, features, tools used, setup instructions, workflow explanations, contribution guidelines, and image placeholders.
-
-You can customize image URLs and GitHub username/repo names as needed.
-
----
-
-````markdown
 # 🚀 DevFlexiConnect – Automated CI/CD Pipeline for .NET API on Azure
 
 ![Build & Deploy](https://github.com/OWNER/REPO/actions/workflows/deployapi.yml/badge.svg?branch=dev)
