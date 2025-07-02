@@ -148,8 +148,9 @@ We welcome contributions!
 
 For questions, suggestions, or issues, please [open an issue](https://github.com/OWNER/REPO/issues) or contact the maintainer.
 
-LinkedIn: (https://www.linkedin.com/in/muthuarun/)
-GitHub:   (https://github.com/Muthuarun1617)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/muthuarun/)
+[![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github)](https://github.com/Muthuarun1617)
+
 
 ---
 
