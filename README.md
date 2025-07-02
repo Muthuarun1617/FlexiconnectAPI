@@ -1,6 +1,7 @@
 # 🚀 DevFlexiConnect – Automated CI/CD Pipeline for .NET API on Azure
 
-![Build & Deploy](https://github.com/OWNER/REPO/actions/workflows/deployapi.yml/badge.svg?branch=dev)
+![Flexiconnect-API](https://github.com/user-attachments/assets/d6938cdc-7e78-4548-bad4-7ad0ae6ec7dc)
+
 
 **DevFlexiConnect** is a robust, production-ready CI/CD pipeline designed for .NET 8.0 APIs using GitHub Actions and Azure Web App. It supports seamless deployment from development to production environments, enforces code reviews, and boosts engineering productivity through automation.
 
