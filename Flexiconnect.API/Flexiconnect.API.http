@@ -1,6 +1,0 @@
-@Flexiconnect.API_HostAddress = http://localhost:5062
-
-GET {{Flexiconnect.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
